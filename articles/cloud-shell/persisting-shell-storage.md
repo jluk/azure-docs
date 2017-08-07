@@ -13,7 +13,7 @@ ms.workload: infrastructure-services
 ms.tgt_pltfrm: vm-linux
 ms.devlang: na
 ms.topic: article
-ms.date: 07/17/2017
+ms.date: 08/07/2017
 ms.author: juluk
 ---
 
@@ -112,14 +112,14 @@ The filepath to clouddrive will show your storage account name and file share in
 
 ```
 justin@Azure:~$ df
-Filesystem                                          1K-blocks   Used  Available Use% Mounted on
-overlay                                             29711408 5577940   24117084  19% /
-tmpfs                                                 986716       0     986716   0% /dev
-tmpfs                                                 986716       0     986716   0% /sys/fs/cgroup
-/dev/sda1                                           29711408 5577940   24117084  19% /etc/hosts
-shm                                                    65536       0      65536   0% /dev/shm
-//mystoragename.file.core.windows.net/fileshareName 5368709120    64 5368709056   1% /home/justin/clouddrive
-justin@Azure:~$
+Filesystem                                                                    1K-blocks     Used Available Use% Mounted on
+overlay                                                                        30428648 26489372   3922892  88% /
+tmpfs                                                                            986704        0    986704   0% /dev
+tmpfs                                                                            986704        0    986704   0% /sys/fs/cgroup
+/dev/sda1                                                                      30428648 26489372   3922892  88% /etc/hosts
+shm                                                                               65536        0     65536   0% /dev/shm
+//myStorageAccountName.file.core.windows.net/fileshareName                      6291456  5242944   1048512  84% /usr/justin/clouddrive
+/dev/loop0                                                                      5160576   543508   4354924  12% /home/justin
 ```
 
 ## Transfer local files to Cloud Shell
