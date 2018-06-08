@@ -82,6 +82,9 @@ Deploy the container group with the [az container create][az-container-create] c
 az container create --resource-group myResourceGroup --name myContainerGroup -f deploy-aci.yaml
 ```
 
+> [!NOTE]
+> The `--name` parameter must match the `name` property of your container. Azure CLI 2.0 will check to verify they match, but passing matching name parameters is required.
+
 Within a few seconds, you should receive an initial response from Azure.
 
 ## View deployment state
